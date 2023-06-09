@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="SalaryContext" prefHeight="638.0" prefWidth="1128.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SalaryFormController">
+   <children>
+      <AnchorPane prefHeight="638.0" prefWidth="1128.0" style="-fx-background-color: #B8B89F;">
+         <children>
+            <Text fill="#ffee00" layoutX="69.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary Form " AnchorPane.leftAnchor="70.0">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutY="88.0" prefHeight="309.0" prefWidth="1130.0" style="-fx-background-color: #D4DBC8;" AnchorPane.topAnchor="80.0">
+               <children>
+                  <Button fx:id="btnAdd" layoutX="937.0" layoutY="50.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="42.0" prefWidth="129.0" style="-fx-background-color: #92F22A;" text="Add">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="937.0" layoutY="106.0" mnemonicParsing="false" onAction="#btnModifyOnAction" prefHeight="42.0" prefWidth="129.0" style="-fx-background-color: #64DDBB;" text="Modify">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="937.0" layoutY="222.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="42.0" prefWidth="129.0" style="-fx-background-color: #EE543A;" text="Delete">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="88.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary ID" AnchorPane.leftAnchor="88.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="88.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="88.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" AnchorPane.rightAnchor="978.61328125">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="569.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtSID" layoutX="88.0" layoutY="93.0" onKeyReleased="#salaryKeyOnReleased" prefHeight="32.0" prefWidth="346.0" AnchorPane.leftAnchor="88.0" />
+                  <TextField fx:id="txtAmount" layoutX="88.0" layoutY="239.0" onKeyReleased="#salaryKeyOnReleased" prefHeight="32.0" prefWidth="346.0" AnchorPane.leftAnchor="88.0" />
+                  <TextField fx:id="txtName" layoutX="88.0" layoutY="167.0" onKeyReleased="#salaryKeyOnReleased" prefHeight="32.0" prefWidth="346.0" AnchorPane.rightAnchor="696.0" />
+                  <TextField fx:id="txtDescription" layoutX="569.0" layoutY="167.0" onKeyReleased="#salaryKeyOnReleased" prefHeight="32.0" prefWidth="346.0" AnchorPane.rightAnchor="215.0" />
+                  <TextField fx:id="txtEID" layoutX="569.0" layoutY="93.0" onKeyReleased="#salaryKeyOnReleased" prefHeight="32.0" prefWidth="346.0" />
+                  <Text layoutX="569.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employer ID">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="937.0" layoutY="162.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="42.0" prefWidth="129.0" style="-fx-background-color: #64DDBB;" text="Search">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Text layoutX="33.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutY="389.0" prefHeight="270.0" prefWidth="1130.0" style="-fx-background-color: #EAF2BB;">
+               <children>
+                  <TableView fx:id="tblSalaryView" layoutX="179.0" layoutY="17.0" prefHeight="234.0" prefWidth="990.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0">
+                     <columns>
+                        <TableColumn fx:id="columnSID" prefWidth="72.0" text="SID" />
+                        <TableColumn fx:id="columnEID" prefWidth="72.0" text="EID" />
+                        <TableColumn fx:id="columnName" prefWidth="269.9999694824219" text="Name" />
+                        <TableColumn fx:id="columnAmount" prefWidth="299.0" text="Amount" />
+                        <TableColumn fx:id="columnDescription" prefWidth="275.0" text="Description" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

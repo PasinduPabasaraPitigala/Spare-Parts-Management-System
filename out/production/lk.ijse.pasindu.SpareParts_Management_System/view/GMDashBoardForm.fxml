@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="1368.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GMDashBoardController">
+   <children>
+      <AnchorPane fx:id="upAnchorpain" layoutX="239.0" layoutY="59.0" prefHeight="638.0" prefWidth="1129.0" style="-fx-background-color: #D6DAC2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="239.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <ImageView fitHeight="638.0" fitWidth="1129.0">
+               <image>
+                  <Image url="@../assets/horsesublogo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="-8.0" layoutY="59.0" prefHeight="638.0" prefWidth="240.0" style="-fx-background-color: #2CC990;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1128.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <Button fx:id="btnItem" alignment="CENTER" mnemonicParsing="false" onAction="#ItemOnAction" prefHeight="44.0" prefWidth="247.0" style="-fx-background-color: #00B5B5;" text="Item" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.3" light="$null" specularConstant="0.0" specularExponent="0.0" surfaceScale="2.78">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="btnEmployers" alignment="CENTER" layoutY="44.0" mnemonicParsing="false" onAction="#EmployeersOnAction" prefHeight="44.0" prefWidth="247.0" style="-fx-background-color: #00B5B5;" text="Employers" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.3" light="$null" specularConstant="0.0" specularExponent="0.0" surfaceScale="2.78">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="btnAttendance" alignment="CENTER" layoutY="85.0" mnemonicParsing="false" onAction="#AttendanceOnAction" prefHeight="44.0" prefWidth="247.0" style="-fx-background-color: #00B5B5;" text="Attendance" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.3" light="$null" specularConstant="0.0" specularExponent="0.0" surfaceScale="2.78">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="btnSalary" alignment="CENTER" layoutY="129.0" mnemonicParsing="false" onAction="#SalaryOnAction" prefHeight="44.0" prefWidth="247.0" style="-fx-background-color: #00B5B5;" text="Salary" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.3" light="$null" specularConstant="0.0" specularExponent="0.0" surfaceScale="2.78">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="btnSupplier" alignment="CENTER" layoutY="173.0" mnemonicParsing="false" onAction="#SupplierOnAction" prefHeight="48.0" prefWidth="240.0" style="-fx-background-color: #00B5B5;" text="Supplier" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.3" light="$null" specularConstant="0.0" specularExponent="0.0" surfaceScale="2.78">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="btnOrders" alignment="CENTER" layoutY="221.0" mnemonicParsing="false" onAction="#OrdersOnAction" prefHeight="48.0" prefWidth="240.0" style="-fx-background-color: #00B5B5;" text="Place Order" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.3" light="$null" specularConstant="0.0" specularExponent="0.0" surfaceScale="2.78">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="btnCustomer" alignment="CENTER" layoutY="268.0" mnemonicParsing="false" onAction="#CustomerOnAction" prefHeight="48.0" prefWidth="240.0" style="-fx-background-color: #00B5B5;" text="Customer" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.3" light="$null" specularConstant="0.0" specularExponent="0.0" surfaceScale="2.78">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="28.0" layoutY="10.0">
+               <image>
+                  <Image url="@../assets/shoppingbag.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="27.0" layoutX="28.0" layoutY="56.0">
+               <image>
+                  <Image url="@../assets/skills.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="28.0" layoutY="95.0">
+               <image>
+                  <Image url="@../assets/calendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="28.0" layoutY="140.0">
+               <image>
+                  <Image url="@../assets/salary.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="27.0" layoutX="28.0" layoutY="183.0">
+               <image>
+                  <Image url="@../assets/agreement.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="28.0" layoutY="234.0">
+               <image>
+                  <Image url="@../assets/checkout.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="28.0" layoutY="282.0">
+               <image>
+                  <Image url="@../assets/target.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="239.0" prefHeight="61.0" prefWidth="1129.0" AnchorPane.bottomAnchor="636.0" AnchorPane.leftAnchor="239.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="RED" layoutX="717.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iron Horse" wrappingWidth="120.220703125">
+               <font>
+                  <Font name="Cambria Bold" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="14.0" layoutY="13.0">
+               <image>
+                  <Image url="@../assets/srilanka.png" />
+               </image>
+            </ImageView>
+            <Text fill="RED" layoutX="698.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spare Parts Shop">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="48.0" fitWidth="64.0" layoutX="867.0" layoutY="6.0">
+               <image>
+                  <Image url="@../assets/h.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnlogOut" layoutX="956.0" layoutY="8.0" mnemonicParsing="false" onAction="#GMlogOutOnAction" prefHeight="44.0" prefWidth="159.0" style="-fx-background-color: #E22211;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.33" light="$null" specularConstant="0.53" specularExponent="40.0" surfaceScale="2.9">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Text layoutX="88.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sri lanka,Western Province Kalutara,119/A" wrappingWidth="205.21484375" AnchorPane.bottomAnchor="-0.458984375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-8.0" layoutY="-1.0" prefHeight="61.0" prefWidth="240.0" style="-fx-background-color: #249991;" AnchorPane.bottomAnchor="636.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1128.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="53.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Menu" wrappingWidth="172.9999967366457">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="6.0" layoutY="8.0">
+               <image>
+                  <Image url="@../assets/spocket.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

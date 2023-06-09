@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CustomerContext" prefHeight="638.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <AnchorPane prefHeight="638.0" prefWidth="1128.0" style="-fx-background-color: #B8B89F;" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Text fill="#ffee00" layoutX="69.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Form " AnchorPane.leftAnchor="70.0">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutY="88.0" prefHeight="308.0" prefWidth="1128.0" style="-fx-background-color: #D4DBC8;" AnchorPane.bottomAnchor="271.0" AnchorPane.topAnchor="80.0">
+               <children>
+                  <Button fx:id="btnAdd" layoutX="893.0" layoutY="41.0" mnemonicParsing="false" onAction="#btnAddOn" prefHeight="32.0" prefWidth="129.0" style="-fx-background-color: #92F22A;" text="Add" AnchorPane.topAnchor="41.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="893.0" layoutY="103.0" mnemonicParsing="false" onAction="#btnModifyOnAction" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #64DDBB;" text="Modify" AnchorPane.topAnchor="103.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="893.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #FF6766;" text="Delete" AnchorPane.bottomAnchor="33.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="236.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="88.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" AnchorPane.leftAnchor="88.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="498.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail" wrappingWidth="170.99999725818634">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="88.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="499.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" AnchorPane.rightAnchor="565.61328125">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="90.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel-Number">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtCID" layoutX="88.0" layoutY="78.0" onAction="#txtCIDOnAction" onKeyReleased="#txtIdOnKeyRelease" prefHeight="32.0" prefWidth="346.0" AnchorPane.leftAnchor="88.0" />
+                  <TextField fx:id="txtAddress" layoutX="88.0" layoutY="159.0" onKeyReleased="#txtIdOnKeyRelease" prefHeight="32.0" prefWidth="346.0" AnchorPane.leftAnchor="88.0" />
+                  <TextField fx:id="txtEmail" layoutX="498.0" layoutY="159.0" onKeyReleased="#txtIdOnKeyRelease" prefHeight="32.0" prefWidth="346.0" AnchorPane.rightAnchor="284.0" />
+                  <TextField fx:id="txtName" layoutX="498.0" layoutY="78.0" onKeyReleased="#txtIdOnKeyRelease" prefHeight="32.0" prefWidth="346.0" AnchorPane.rightAnchor="284.0" />
+                  <TextField fx:id="txtTelNumber" layoutX="88.0" layoutY="239.0" onKeyReleased="#txtIdOnKeyRelease" prefHeight="32.0" prefWidth="346.0" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="694.0" />
+                  <Button layoutX="893.0" layoutY="172.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #1DABB8;" text="Search" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="172.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="712.0" layoutY="235.0" mnemonicParsing="false" onAction="#printOnAction" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: yellow;" text="PRINT">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-8.0" layoutY="388.0" prefHeight="271.0" prefWidth="1138.0" style="-fx-background-color: #EAF2BB;" AnchorPane.bottomAnchor="0.0">
+               <children>
+                  <TableView fx:id="tblCustomer" layoutX="70.0" layoutY="26.0" prefHeight="194.0" prefWidth="998.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="26.0">
+                     <columns>
+                        <TableColumn fx:id="CoulmnCusID" prefWidth="198.0" text="CID" />
+                        <TableColumn fx:id="CoulmnCusName" prefWidth="202.0" text="Name" />
+                        <TableColumn fx:id="CoulmnCusAddress" prefWidth="190.0" text="Address" />
+                        <TableColumn fx:id="CoulmnCusTelNum" prefWidth="180.0" text="Tel-Number" />
+                        <TableColumn fx:id="CoulmnCusEmail" minWidth="0.0" prefWidth="227.0" text="E-mail" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

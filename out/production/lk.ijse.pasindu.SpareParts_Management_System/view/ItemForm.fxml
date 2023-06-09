@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ItemContext" prefHeight="638.0" prefWidth="1128.0" style="-fx-background-color: #B1B6B7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
+   <children>
+      <AnchorPane prefHeight="644.0" prefWidth="1152.0" style="-fx-background-color: #B8B89F;" AnchorPane.bottomAnchor="172.0">
+         <children>
+            <Text fill="#ffee00" layoutX="70.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Form" wrappingWidth="204.20703125" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="13.8359375">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutY="80.0" prefHeight="308.0" prefWidth="1152.0" style="-fx-background-color: #D4DBC8;" AnchorPane.bottomAnchor="347.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+               <children>
+                  <Text layoutX="82.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item ID" AnchorPane.leftAnchor="82.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="512.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description " AnchorPane.leftAnchor="512.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="512.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" AnchorPane.leftAnchor="512.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="82.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="83.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtItemID" layoutX="83.0" layoutY="77.0" onAction="#txtSearchOnAction" onKeyReleased="#txtItemIDKeyReleasedOnAction" prefHeight="32.0" prefWidth="346.0" AnchorPane.leftAnchor="83.0" />
+                  <TextField fx:id="txtQty" layoutX="83.0" layoutY="243.0" onKeyReleased="#txtItemIDKeyReleasedOnAction" prefHeight="32.0" prefWidth="346.0" AnchorPane.leftAnchor="83.0" />
+                  <TextField fx:id="txtPrice" layoutX="512.0" layoutY="243.0" onKeyReleased="#txtItemIDKeyReleasedOnAction" prefHeight="32.0" prefWidth="346.0" AnchorPane.leftAnchor="512.0" />
+                  <TextField fx:id="txtName" layoutX="83.0" layoutY="157.0" onKeyReleased="#txtItemIDKeyReleasedOnAction" prefHeight="32.0" prefWidth="346.0" AnchorPane.rightAnchor="723.0" />
+                  <Button fx:id="btnAdd" layoutX="905.0" layoutY="47.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #92F22A;" text="Add" AnchorPane.topAnchor="47.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnModify" layoutX="904.0" layoutY="109.0" mnemonicParsing="false" onAction="#btnModifyOnAction" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #83D6DE;" text="Modify" AnchorPane.topAnchor="109.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtCategory" layoutX="512.0" layoutY="77.0" onKeyReleased="#txtItemIDKeyReleasedOnAction" prefHeight="32.0" prefWidth="346.0" />
+                  <Button fx:id="btnDelete" layoutX="905.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="127.0" style="-fx-background-color: #EE543A;" text="Delete" AnchorPane.bottomAnchor="38.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="240.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSearch" layoutX="904.0" layoutY="170.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #1DABB8;" text="Search" AnchorPane.rightAnchor="119.0" AnchorPane.topAnchor="170.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="512.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtDescription" layoutX="512.0" layoutY="157.0" onKeyReleased="#txtItemIDKeyReleasedOnAction" prefHeight="32.0" prefWidth="346.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="397.0" prefHeight="271.0" prefWidth="1152.0" style="-fx-background-color: #EAF2BB;" AnchorPane.bottomAnchor="76.0" AnchorPane.topAnchor="397.0">
+               <children>
+                  <TableView fx:id="tblItemForm" layoutX="32.0" layoutY="24.0" prefHeight="194.0" prefWidth="1091.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="26.0">
+                     <columns>
+                        <TableColumn fx:id="tblItemID" prefWidth="145.00003051757812" text="ItemID" />
+                        <TableColumn fx:id="tblDescription" prefWidth="131.0" text="Description" />
+                        <TableColumn fx:id="tbleCategoryName" prefWidth="193.0" text="CategoryName" />
+                        <TableColumn fx:id="tblItemName" prefWidth="220.0" text="ItemName" />
+                        <TableColumn fx:id="tblQty" minWidth="0.0" prefWidth="176.0" text="Qty" />
+                        <TableColumn fx:id="tblPrice" prefWidth="224.0" text="Price" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierLoginFormController">
+   <children>
+      <AnchorPane fx:id="Anchorpain2" layoutX="693.0" layoutY="74.0" prefHeight="623.0" prefWidth="675.0" style="-fx-background-color: #E0E4CC;" AnchorPane.leftAnchor="693.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="userNametxt" focusColor="BLACK" layoutX="103.0" layoutY="168.0" onAction="#userNametxtOnAction" prefHeight="45.0" prefWidth="503.0" promptText="User Name">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="passwordtxt" focusColor="#141414" layoutX="103.0" layoutY="253.0" onAction="#passwordtxtOnAction" prefHeight="45.0" prefWidth="503.0" promptText="Password">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnlog" buttonType="RAISED" layoutX="153.0" layoutY="399.0" onAction="#btnLoginOnAction" prefHeight="53.0" prefWidth="406.0" style="-fx-background-color: #83D6DE;" text="Login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria Math" size="28.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="202.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cashier Login " textAlignment="CENTER" wrappingWidth="270.9999979734421" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="202.0">
+               <font>
+                  <Font name="Constantia" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="103.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#1f13ff" layoutX="266.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create new Account...">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="181.0" layoutY="312.0" onAction="#FogotOnAction" prefHeight="33.0" prefWidth="347.0" text="Fogot Password?" textFill="RED" underline="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="75.0" prefWidth="1368.0" style="-fx-background-color: #A0B58D;">
+         <children>
+            <Text fill="RED" layoutX="1054.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iron Horse" wrappingWidth="114.220703125">
+               <font>
+                  <Font name="Cambria Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="162.0" layoutY="13.0">
+               <image>
+                  <Image url="@../assets/srilanka.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="230.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sri lanka,Western Province Kalutara,119/A" wrappingWidth="205.21484375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="1111.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spare Parts Shop">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="37.0" fitWidth="59.0" layoutX="1271.0" layoutY="15.0">
+               <image>
+                  <Image url="@../assets/h.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBack" layoutX="26.0" layoutY="12.0" mnemonicParsing="false" onAction="#CashierbckOnAction" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: red;" text="&lt;Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.3" light="$null" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.05">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="623.0" fitWidth="692.0" layoutY="75.0" opacity="0.9">
+         <image>
+            <Image url="@../assets/SPAREPARTSSHOPSAMPLE01.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
